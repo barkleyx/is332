@@ -82,3 +82,14 @@
 			
 			//Append to #img-list
 			imgList.find('ul').append(arr);
+			
+			//Nav Thumbnail Click
+			nav.on('click','a',function(e) {
+				var pos = $(this).parent().index();
+				e.preventDefault();
+				loadImg(pos);
+				if(swipeEnabled) {
+					mySwipe.slide(pos,300);
+				}
+				updateNav(pos);
+			});
