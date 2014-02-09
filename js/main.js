@@ -75,3 +75,7 @@
 			nav.find('a').each(function() {
 				var $this = $(this),
 					href = $this.attr('href');
+					
+				//Prepare list item with image source in data attribute
+				arr += '<li data-imgsrc="'+href+'"></li>';
+			});
