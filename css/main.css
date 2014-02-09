@@ -810,10 +810,22 @@ header[role="banner"] .nav {
 	}
 }
 
-/************Mobile Queries**************/
+/************End Mobile Queries**************/
 
-
-
+/************Animations**************/
+@-webkit-keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1;  }
+}
+@-moz-keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1;  }
+}
+@-ms-keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1;  }
+}
+/************End Animations**************/
 
 
 
