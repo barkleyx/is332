@@ -93,3 +93,16 @@
 				}
 				updateNav(pos);
 			});
+			
+			Modernizr.load({
+			  test: Modernizr.touch && Modernizr.csstransitions,
+			  yep : 'js/swipe.js',
+			  complete : function() {
+					if(w.Swipe) {
+						swipeEnabled = true;
+						buildSwipe();
+					}
+			  }
+			});
+			loadImg(0); //Load initial image
+		}
