@@ -55,3 +55,18 @@
 			}
 		});
 	}
+	
+	//Set up Image Carousel
+	function setImg() {
+		var container = $('#img-container'),
+			nav = $('#product-img').find('nav'),
+			imgList = Object,
+			current = 0,
+			swipeEnabled = false;
+		
+		function buildGallery() {
+			container.html('<div id="img-list"><ul /></div>');
+			imgList = $('#img-list');
+			nav.find('li:first').addClass('active');
+			
+			var arr = '';
