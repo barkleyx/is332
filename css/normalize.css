@@ -430,3 +430,9 @@ h2 {
 	font-size: 1.6em;
 }
 /************End Global**************/
+
+/************Global**************/
+.btn {
+	display: inline-block;	
+}
+/************End Global**************/
