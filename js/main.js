@@ -79,3 +79,6 @@
 				//Prepare list item with image source in data attribute
 				arr += '<li data-imgsrc="'+href+'"></li>';
 			});
+			
+			//Append to #img-list
+			imgList.find('ul').append(arr);
