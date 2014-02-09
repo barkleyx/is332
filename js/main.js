@@ -70,3 +70,8 @@
 			nav.find('li:first').addClass('active');
 			
 			var arr = '';
+			
+			//For Each Navigation Link
+			nav.find('a').each(function() {
+				var $this = $(this),
+					href = $this.attr('href');
